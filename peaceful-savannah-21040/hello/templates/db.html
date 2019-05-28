@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+  <div class="container">
+
+
+<h2>Station records</h2>
+
+
+<table style="width:100%">
+  <tr>
+    <th>ID record</th>
+    <th>Time scraped</th>
+    <th>All stations</th>
+    <!-- <th>ID record</th>
+    <th>ID station</th>
+    <th>Name</th>
+    <th>Time scrap</th>
+    <th>Bikes total</th>
+    <th>Bikes Available</th>
+    <th>Anchors</th> -->
+  </tr>
+  {% for feature in features %}
+  <tr>
+    <td>{{  feature.id  }}</td>
+    <td>{{  feature.time_scrape }}</td>
+    <td>{{  feature.feature_collection  }}</td>
+  </tr>
+  {% endfor %}
+  <!-- {% for station in station_records %}
+  <tr>
+    <td>{{  station.id  }}</td>
+    <td>{{  station.station_id  }}</td>
+    <td>{{  station.name  }}</td>
+    <td>{{  station.time_scrap }}</td>
+    <td>{{  station.bikes_total  }}</td>
+    <td>{{  station.bikes_available }}</td>
+    <td>{{  station.anchorsb  }}</td>
+  </tr>
+  {% endfor %} -->
+
+</table>
+
+<!-- <ul>
+
+{% for station in station_records %}
+    <li>{{  station.anchorsb  }}</li>
+{% endfor %}
+
+</ul> -->
+
+</div>
+
+{% endblock %}
