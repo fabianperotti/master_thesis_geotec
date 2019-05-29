@@ -3,8 +3,8 @@
 ### *get_stations_info*
 Get the information related to the stations. 
 Parameters: 
--file: csv file (exported from pgAdmin) containing columns id, time_scrape, feature collection 
--output_file: output file eg. stations_info.csv 
+- file: csv file (exported from pgAdmin) containing columns id, time_scrape, feature collection 
+- output_file: output file eg. stations_info.csv 
 
 The output file contains the following attributes:
 - time_scraped: timestamp tz= “UTC” when the data was collected 
