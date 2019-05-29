@@ -47,6 +47,7 @@ Parameters:
 - fileoutput: output file with the clean records eg. clean-records_1.csv  
 - fileoutput_nw: output file with the failing anchors/byclcews eg. not-working_1.csv   
 
+(iterating causes unnecessary indexes columns that should be deleted later)
 
 ### *get_movements*
 Obtain the trips per bike when a bike changes station or anchor. 
