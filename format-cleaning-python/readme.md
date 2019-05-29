@@ -10,14 +10,14 @@ The output file contains the following attributes:
 - time_scraped: timestamp tz= “UTC” when the data was collected 
 - station_id: station number id 
 - name: station name
--long: longitude coordinate
--lat: latitude coordinate
--bikes_total: total number of bikes parked at the station
--bikes_available:number of bikes available to be used
--number_loans: number of loans given from that station. Cumulative number of bikes taken by the users throughout the day. The count re-starts from zero at 5 am every day.  (The number could not re-start some days due to failures)
--incidents:total number of incidents reported by the anchors of the station
--last_seen: last time when the station was accessed 
--online: TRUE if the station is online or FALSE if it is offline. 
+- long: longitude coordinate
+- lat: latitude coordinate
+- bikes_total: total number of bikes parked at the station
+- bikes_available:number of bikes available to be used
+- number_loans: number of loans given from that station. Cumulative number of bikes taken by the users throughout the day. The count re-starts from zero at 5 am every day.  (The number could not re-start some days due to failures)
+- incidents:total number of incidents reported by the anchors of the station
+- last_seen: last time when the station was accessed 
+- online: TRUE if the station is online or FALSE if it is offline. 
 
 ### *obtain_records*
 Get the information related to the bicycles/anchors and creates a file contining the bicycles Ids called bikes_numbers.csv 
