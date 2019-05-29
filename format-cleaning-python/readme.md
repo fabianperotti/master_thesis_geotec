@@ -1,13 +1,13 @@
-##Data formating and cleaning Functions in Python
+# Data formating and cleaning Functions in Python
 
-*get_stations_info*
+### *get_stations_info*
 Get the information related to the stations. 
 Parameters: 
 -file: csv file (exported from pgAdmin) containing columns id, time_scrape, feature collection 
 -output_file: output file eg. stations_info.csv 
 
 The output file contains the following attributes:
-- time_scraped: timestamp tz= ìUTCî when the data was collected 
+- time_scraped: timestamp tz= ‚ÄúUTC‚Äù when the data was collected 
 - station_id: station number id 
 - name: station name
 -long: longitude coordinate
@@ -19,14 +19,14 @@ The output file contains the following attributes:
 -last_seen: last time when the station was accessed 
 -online: TRUE if the station is online or FALSE if it is offline. 
 
-*obtain_records*
+### *obtain_records*
 Get the information related to the bicycles/anchors and creates a file contining the bicycles Ids called bikes_numbers.csv 
 Parameters: 
 - file: input csv file (exported from pgAdmin) containing columns id, time_scrape, feature collection 
 - output_file: output file eg. records.csv  
 
 The output file contains the following attributes:
-- time_scraped: timestamp tz= ìUTCî when the data was collected 
+- time_scraped: timestamp tz= ‚ÄúUTC‚Äù when the data was collected 
 - bicycle: the number of bicycle parked or NULL if it is empty. 
 - station_id: station id number 
 - name: station name
@@ -36,9 +36,9 @@ The output file contains the following attributes:
 - incident:  [ ] if there is no incident or [ 0 ] if the bicycle or the anchor cannot be used. 
 
 
-*delete_duplicated_records*
+### *delete_duplicated_records*
 Some anchors keep recording the bike as parked after it was taken, creating a fake record of that bike which moves between different stations. This function detects the failing anchors, correct the error generation 2 files: one with the records cleaned and the other one containing the failing anchors/bicycles records.
-To obtained the final cleaned dataset the records file need to be processed as many times as the maximum number of ìfailing anchorsî at the same time happens.
+To obtained the final cleaned dataset the records file need to be processed as many times as the maximum number of ‚Äúfailing anchors‚Äù at the same time happens.
 The files containing the failing anchors datasets have to be merged later.
 
 Parameters: 
@@ -48,9 +48,7 @@ Parameters:
 - fileoutput_nw: output file with the failing anchors/byclcews eg. not-working_1.csv   
 
 
-
-
-*get_movements*
+### *get_movements*
 Obtain the trips per bike when a bike changes station or anchor. 
  
 Parameters: 
