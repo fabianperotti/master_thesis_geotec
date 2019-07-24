@@ -1,8 +1,8 @@
 ﻿# File exported from the postgres database
-## Link to files: https://drive.google.com/open?id=1RTJ1d-wUKp98q-d3W95_Rb6rJ7yrNu85
+### Link to files: https://drive.google.com/open?id=1RTJ1d-wUKp98q-d3W95_Rb6rJ7yrNu85
 
 ### *bicicas-nov-dec-jan.csv*  
-####Attributes: 
+#### Attributes: 
 - id: id generated 
 - time_scrape:  timestamp when the data was collected
 - feature_colection: retrieved (raw) data stored in geoJSON format containing the  data seen in https://ws2.bicicas.es/bench_status_map 
@@ -37,7 +37,7 @@ Obtained with the function get_stations_info
 
 ### *records_nov-dec-jan_original.csv*
 Obtained with the function obtain_records
-####Attributes:
+#### Attributes:
 - time_scraped: timestamp tz= “UTC” when the data was collected
 - bicycle: the number of bicycle parked or NULL if it is empty.
 - station_id: station id number
@@ -54,13 +54,13 @@ Created by the obtain_records function.
 Obtained with the function delete_duplicated_records (after 4 iterations)
 Contain unnecessary indexes columns. 
 
-### failing_anchors.csv 
+### *failing_anchors.csv* 
 Created by the function delete_duplicated_records.
 (4 files were created during the iterations, already merged in this file)
 
-### bike_movements_nov-dec-jan 
+### *bike_movements_nov-dec-jan.csv* 
 Obtained with the function get_movements.
-####Attributes:
+#### Attributes:
 - bicycle: bicycle id number
 - datetime_start: starting timestamp tz = UTC
 - station_start: starting station ID
