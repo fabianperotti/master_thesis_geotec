@@ -1,5 +1,7 @@
-﻿# File exported from the postgres database
-### Link to files: https://drive.google.com/open?id=1RTJ1d-wUKp98q-d3W95_Rb6rJ7yrNu85
+# Link to files
+### https://drive.google.com/open?id=1RTJ1d-wUKp98q-d3W95_Rb6rJ7yrNu85
+# File exported from the postgres database
+
 
 ### *bicicas-nov-dec-jan.csv*  
 #### Attributes: 
